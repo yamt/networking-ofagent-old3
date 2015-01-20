@@ -56,7 +56,8 @@ from networking_ofagent.plugins.ofagent.agent import tables
 
 
 LOG = logging.getLogger(__name__)
-cfg.CONF.import_group('AGENT', 'neutron.plugins.ofagent.common.config')
+cfg.CONF.import_group('AGENT',
+                      'networking_ofagent.plugins.ofagent.common.config')
 
 
 # A class to represent a VIF (i.e., a port that has 'iface-id' and 'vif-mac'
